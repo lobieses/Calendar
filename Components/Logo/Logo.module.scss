@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    .vertical {
+        height: 30px;
+        width: 20px;
+        background-color: #FDD000;
+        color: #3D3D3D;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 13px;
+        text-align: center;
+    }
+
+    .horizontal {
+        color: #3D3D3D;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+
+        span {
+            font-size: 42px;
+            line-height: 35px;
+        }
+    }
+}
+

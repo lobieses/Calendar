@@ -1,0 +1,99 @@
+.modalBackground {
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    background: rgba(39,40,41, 0.9);
+    transition: 0.3s all;
+    transform: scale(0);
+
+    &.active {
+        transform: scale(1);
+    }
+
+    .modal {
+        position: absolute;
+        width: 38%;
+        height: 100px;
+        background-color: #fff;
+        left: calc(50% - 19%);
+        top: 30%;
+
+        .content {
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 10px;
+            align-items: center;
+
+            .exit {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                background-color: #FDD000;
+                font-size: 20px;
+                text-align: center;
+                line-height: 16px;
+                cursor: pointer;
+                transition: 0.3s all;
+
+                &:hover {
+                    background-color: red;
+                }
+            }
+
+            h2, input {
+                font-family: 'Rubik', sans-serif;
+                font-size: calc(0.4em + 1vw);
+                font-weight: 500;
+            }
+
+            h2 {
+                margin: 0;
+                color: #A2A2A2;
+            }
+
+            input {
+                outline: none;
+                margin-top: 5px;
+                width: 100%;
+                border: 2px solid #FDD000;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .modalBackground {
+        .modal {
+            width: 50%;
+            left: calc(50% - 25%);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .modalBackground {
+        .modal {
+            width: 70%;
+            left: calc(50% - 35%);
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .modalBackground {
+        .modal {
+            width: 640px;
+            left: calc(50% - 320px);
+
+            .content {
+                h2, input {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

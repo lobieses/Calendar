@@ -1,0 +1,66 @@
+.home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  .text {
+    background: url(../../images/mainBackground.png) no-repeat left top / cover;
+    width: 60%;
+    padding-top: 10%;
+    padding-right: 30px;
+    text-align: right;
+
+    h1 {
+      width: 100%;
+      display: block;
+      color: #FDD000;
+      text-transform: uppercase;
+      font-family: 'Rubik', sans-serif;
+      font-weight: bold;
+      font-size: calc(2em + 1vw);
+      letter-spacing: 3.5px;
+    }
+
+    p {
+      width: 100%;
+      color: #DFDFDF;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 300;
+      font-size: calc(0.8em + 1vw);
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .calendar {
+    width: 40%;
+    background-color: #272829;
+  }
+}
+
+@media (max-width: 1020px) {
+  .home {
+    flex-direction: column;
+
+    .text {
+      width: 100%;
+      height: 30%;
+      padding-top: 10px;
+      padding-right: 0;
+      text-align: center;
+
+      h1 {
+          font-size: calc(1.2em + 1vw);
+      }
+      p {
+          font-size: calc(0.6em + 1vw);
+      }
+    }
+
+    .calendar {
+      width: 100%;
+      height: 70%;
+    }
+  }
+}
+
+

@@ -1,0 +1,38 @@
+.about {
+    height: 100%;
+    padding: 50px 10%;
+
+    h1 {
+        font-size: calc(1em + 1vw);
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: calc(0.3em + 1vw);
+        font-weight: 300;
+        margin-top: 30px;
+        line-height: 1.6em;
+    }
+
+    h1,p {
+        font-family: 'Rubik', sans-serif;
+        color: #3D3D3D;
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        padding: 20px 5%;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: calc(0.5em + 1vw);
+        }
+    }
+}
+
